@@ -1,0 +1,38 @@
+{
+  "name": "niconico-search",
+  "version": "0.1.0",
+  "description": "API client for http://search.nicovideo.jp/docs/api/search.html",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "*.md"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsuwatch/niconico-search.git"
+  },
+  "keywords": [
+    "niconico",
+    "search",
+    "client"
+  ],
+  "author": "tsuwatch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsuwatch/niconico-search/issues"
+  },
+  "homepage": "https://github.com/tsuwatch/niconico-search#readme",
+  "dependencies": {
+    "axios": "^0.15.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0"
+  }
+}
