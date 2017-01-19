@@ -11,8 +11,7 @@ export default class Base {
     this.service = params.service;
     this.userAgent = params.userAgent || 'niconico-search';
     this.client = axios.create({
-      baseURL: 'http://api.search.nicovideo.jp',
-      headers: { 'User-Agent': this.userAgent }
+      baseURL: 'http://api.search.nicovideo.jp'
     });
   }
 
