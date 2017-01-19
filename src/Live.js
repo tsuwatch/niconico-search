@@ -1,8 +1,15 @@
 import Base from './Base';
 
 export default class Live extends Base {
+  /**
+   * Create Live API Client class
+   * @param {string} userAgent - your User-Agent
+   */
   constructor(userAgent) {
-    super('live', userAgent);
+    super({
+      service: 'live',
+      userAgent: userAgent
+    });
   }
 
   _default_params() {

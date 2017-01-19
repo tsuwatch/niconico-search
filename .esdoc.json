@@ -1,0 +1,7 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "experimentalProposal": {
+    "exportExtensions": true
+  }
+}

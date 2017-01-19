@@ -1,15 +1,28 @@
 import axios from 'axios';
 
 export default class Base {
-  constructor(service, userAgent = 'niconico-search') {
-    this.service = service;
-    this.userAgent = userAgent;
+  /**
+   * Create API Client class
+   * @param {Object} params
+   * @param {string} params.service - target service
+   * @param {string} params.userAgent - your User-Agent
+   */
+  constructor(params) {
+    this.service = params.service;
+    this.userAgent = params.userAgent || 'niconico-search';
     this.client = axios.create({
       baseURL: 'http://api.search.nicovideo.jp',
       headers: { 'User-Agent': this.userAgent }
     });
   }
 
+  /**
+   * Request
+   * @see http://search.nicovideo.jp/docs/api/search.html
+   * @param {string} search - search word
+   * @param {Object} params - other queries
+   * @return {Promise.<Object, Error>}
+   */
   search(search, params = {}) {
     const queryHash = Object.assign(
       { q: search, _context: this.userAgent },
