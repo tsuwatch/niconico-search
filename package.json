@@ -1,6 +1,6 @@
 {
   "name": "niconico-search",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "API client for http://search.nicovideo.jp/docs/api/search.html",
   "main": "lib/index.js",
   "files": [
