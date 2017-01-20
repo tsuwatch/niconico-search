@@ -2,17 +2,24 @@ import Base from './Base';
 
 export default class Live extends Base {
   /**
-   * Create Live API Client class
-   * @param {string} userAgent - your User-Agent
+   * create Live API Client class
+   * @param {string} userAgent your User-Agent
+   * @public
    */
   constructor(userAgent) {
     super({
-      service: 'live',
-      userAgent: userAgent
+      userAgent,
+      service: 'live'
     });
   }
 
-  _default_params() {
+  /**
+   * default parameters
+   * @override
+   * @private
+   * @return {Object} default parameters
+   */
+  _defaultParams() {
     return {
       targets: 'title,description,tags',
       fields: [

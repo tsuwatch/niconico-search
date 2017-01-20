@@ -1,4 +1,6 @@
 # niconico-search
+[![npm version](https://badge.fury.io/js/niconico-search.svg)](https://badge.fury.io/js/niconico-search)
+[![Build Status](https://travis-ci.org/tsuwatch/niconico-search.svg?branch=master)](https://travis-ci.org/tsuwatch/niconico-search)
 
 niconico-search is a API client for niconico コンテンツ検索API http://search.nicovideo.jp/docs/api/search.html
 
